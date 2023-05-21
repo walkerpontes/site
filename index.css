@@ -1,0 +1,139 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@600&display=swap');
+body{
+    font-family: 'Sora', sans-serif;
+}
+.part1{
+    width: 100%;
+    height: 2000px;
+    background-image: url('img/1.svg');
+    background-repeat: no-repeat;
+    background-size: auto;
+    position: absolute;
+
+}
+.cabecario{
+    position: relative;
+    width: 100%;
+    height: 50px;
+}
+.cabecario img{
+    display: inline;
+    position: absolute;
+    width: 180px;
+    height: 50px;
+    left: 20px;
+    top: 15px;
+}
+
+.heard ul{
+    position: absolute;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    right: 45px;
+    top: 15px;
+}
+.heard li{
+    color: white;
+    position: relative;
+    margin: 10px;
+    transition: 0.2s;
+    font-size: 15px;
+    font-weight: 700;
+
+}
+
+.heard li:hover{
+    color: rgb(241, 237, 0);
+}
+.pi::before {
+    transition: all 1s;
+}
+
+
+.heard li::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    background: rgb(241, 237, 0);
+    bottom: -6px; 
+    transition: 0.5s;
+}
+
+.heard li:hover::before{
+    width: 100%;
+}
+
+.arena{
+    position: absolute;
+    left:15%;
+    top: 200px;
+}
+
+.arena-rl{
+    display: flex;
+    flex-direction: column;
+}
+
+.arena-rl span{
+   margin-bottom: 5px;
+}
+.span-arena-1{
+    font-size: 50px;
+    color: white;
+    letter-spacing: 3px;
+    font-weight:900;
+}
+.span-arena-2{
+    font-size: 22px;
+    color: white;
+    font-weight: 300;
+}
+.agende{
+    background-image: url('img/Retângulo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    padding: 10px 12px;
+    width: 300px;
+    text-align: center;
+}
+.span-arena-3{
+    font-size: 16px;
+    font-weight: 600;
+    padding: 5px 1;
+    color:black;
+    
+}   
+
+.nssportes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 650px;
+    left: 32%;
+    text-align: center;
+    align-items: center;
+}
+.nssportes img{
+    
+    width: 360px;
+    height: 38px;
+    margin-bottom: 5px;
+}
+.nssportes span{
+    color: white;
+    font-size: 47px;
+}
+
+
+.tb-esportes-2{
+    border: 2px solid white;
+    position: absolute;
+    width: 350px;
+    height: 500px;
+    top: 700px;
+}
