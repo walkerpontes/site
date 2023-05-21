@@ -1,7 +1,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@600&display=swap');
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: 'Sora', sans-serif;
+    scroll-behavior: smooth;
 }
 .part1{
     width: 100%;
@@ -24,7 +28,11 @@ body{
     height: 50px;
     left: 20px;
     top: 15px;
+    transition: 4s;
+}.cabecario img:hover{
+    transform: rotateY(360deg);
 }
+
 
 .heard ul{
     position: absolute;
