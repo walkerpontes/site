@@ -2,65 +2,95 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@600&display=swap');
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 body{
     font-family: 'Sora', sans-serif;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
+
 .part1{
     width: 100%;
     height: 1485px;
     background-image: url('img/1.svg');
     background-repeat: no-repeat;
     background-size: cover;
-    position: absolute;
+    position: relative;
+
+}
+
+.bnt-whats img{
+    position: fixed;
+    bottom: 30px;
+    right: 35px;
+    z-index: 2;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: -3px 2px 4px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    transition: all 1s;
+}
+.bnt-whats img:hover{
+    transform: rotate(360deg);
+}
+.bnt-whats p{
+    position: fixed;
+    bottom: 35px;
+    right: 90px;
+    z-index: 2;
+    padding: 10px;
+    background: white;
+    font-size: 14px;
+    border-radius: 7px;
+    box-shadow: -3px 2px 4px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
 
 }
 .cabecario{
+    display: flex;
+    flex-direction: row;
     position: relative;
-    width: 100%;
+    justify-content: space-between;
+    align-items: center;
     height: 50px;
+    margin: 0 20px;
 }
 .cabecario img{
-    display: inline;
-    position: absolute;
-    width: 180px;
+    width: 200px;
     height: 50px;
     left: 20px;
     top: 15px;
+    margin-top: 10px;
     transition: 4s;
 }.cabecario img:hover{
     transform: rotateY(360deg);
 }
 
 
-.heard ul{
-    position: absolute;
+.cabecario ul{
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
     right: 45px;
     top: 15px;
 }
-.heard li{
-    color: white;
+.header{
     position: relative;
+    color: white;
     margin: 10px;
     transition: 0.2s;
     font-size: 15px;
     font-weight: 700;
-
+    cursor: pointer;
 }
 
-.heard li:hover{
+.header:hover{
     color: rgb(241, 237, 0);
 }
-.pi::before {
-    transition: all 1s;
-}
 
-
-.heard li::before {
+.header::before {
     content: "";
     position: absolute;
     width: 0;
@@ -70,7 +100,7 @@ body{
     transition: 0.5s;
 }
 
-.heard li:hover::before{
+.header:hover::before{
     width: 100%;
 }
 
@@ -107,6 +137,7 @@ body{
     padding: 10px 12px;
     width: 300px;
     text-align: center;
+    cursor: pointer;
 }
 .span-arena-3{
     font-size: 16px;
@@ -120,9 +151,8 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    position: absolute;
+    position: relative;
     top: 650px;
-    left: 32%;
     text-align: center;
     align-items: center;
 }
@@ -138,10 +168,173 @@ body{
 }
 
 
-.tb-esportes-2{
-    border: 2px solid white;
+.esportes,.esportes-2{
     position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid #fece00;
     width: 350px;
     height: 500px;
-    top: 700px;
+    bottom: 100px;
+}
+
+
+.esportes{
+   left: 13%;
+}
+
+.esportes-2{
+    right: 13%;
+}
+
+.tb-esportes, .tb-esportes-2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.tb-esportes li, .tb-esportes-2 li{
+    color: white;
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+.img-esportes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    margin-right: 10px;
+}
+.img-esportes img{
+    margin: 13px 0;
+    
+}
+
+.part2{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 250px;
+    background: linear-gradient(to right, #fece00 , #fcdc4e 50% ,#fece00 70% 100%);
+}
+.frase{
+    display: flex;
+    flex-direction: column;
+}
+.preguica{
+    font-size: 22px;
+}
+
+.fazer{
+    font-size: 25px;
+}
+.agendar{
+    color: white;
+    font-size: 16px;
+    background: black;
+    border-radius: 5px;
+    padding: 13px;
+    box-shadow:-5px -3px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+
+}
+
+.professores{
+    background-image: url('img/quadrado.png');
+    background-repeat: repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 850px;
+    color: white;
+}
+.professores h1{
+    font-size: 30px;
+    margin-top: 50px;
+}
+.prof-main{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 100px;
+    width: 100%;
+    min-height: 300px;
+}
+
+.prof-main img{
+    width: 564px;
+    height: 358px;
+}
+
+.prof-main span{
+    color: #fece00;
+    width: 550px;
+    margin-left: 35px;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.professores p{
+    margin-top: 100px;
+    font-size: 23px;
+}
+.professores nav{
+    margin-top: 35px;
+    background: rgb(17, 17, 17);
+    font-size: 27px;
+    border:1px solid #fece00;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow:-5px -3px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.localizacao{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    height: 700px;
+    background: #fece00;
+}
+
+.localizacao h1{
+    font-size: 30px;
+    margin-top: 70px;
+}
+.localizacao p{
+    font-size: 17px;
+    margin-top: 30px;
+}
+.localizacao iframe{
+    width: 800px;
+    height: 400px;
+    min-width: 400px;
+    min-height: 100px;
+    margin-top: 50px;
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    height: 270px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    font-size: 14px;
+    color: white;
 }
