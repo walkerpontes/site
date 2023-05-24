@@ -253,7 +253,6 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 850px;
     color: white;
 }
 .professores h1{
@@ -292,6 +291,7 @@ body{
 }
 .professores nav{
     margin-top: 35px;
+    margin-bottom:70px;
     background: rgb(17, 17, 17);
     font-size: 27px;
     border:1px solid #fece00;
@@ -320,10 +320,8 @@ body{
     margin-top: 30px;
 }
 .localizacao iframe{
-    width: 800px;
-    height: 400px;
-    min-width: 400px;
-    min-height: 100px;
+    width: 70%;
+    height: 55%;
     margin-top: 50px;
 }
 
